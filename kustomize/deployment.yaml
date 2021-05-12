@@ -21,6 +21,6 @@ spec:
         - mountPath: /apps
           name: nginx-volume
       volumes:
-        - name: nginx
+        - name: nginx-volume
           persistentVolumeClaim:
             claimName: nginx
