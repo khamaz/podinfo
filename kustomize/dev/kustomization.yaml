@@ -3,6 +3,7 @@ resources:
 
 bases:
   - ../bases/deployment.yaml
+  - ../bases/service.yaml
 
 namePrefix: dev-
 namespace: dev
