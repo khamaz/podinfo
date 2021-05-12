@@ -17,3 +17,10 @@ spec:
       containers:
       - image: nginx
         name: nginx
+        volumeMounts:
+        - mountPath: /apps
+          name: nginx-volume
+      volumes:
+        - name: nginx
+          persistentVolumeClaim:
+            claimName: nginx
